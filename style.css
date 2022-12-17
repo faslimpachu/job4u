@@ -1,3 +1,6 @@
+
+
+
 * {
   box-sizing: border-box;
   
@@ -51,6 +54,11 @@ body {
 .nav > #nav-check {
   display: none;
 }
+.text-on{
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 
 @media (max-width:600px) {
   .nav > .nav-btn {
@@ -69,12 +77,7 @@ body {
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
+  
   .nav > .nav-links {
     position: absolute;
     display: block;
@@ -115,16 +118,27 @@ body {
   .btn-1{
     position: relative;
     bottom: 150px;
-    left: 27px;
+    left: 75px;
 
   }
   .btn-2{
     position: relative;
     bottom: 140px;
-    left: 27px;
+    left: 75px;
 
   }
   
+  .nelson{
+    position: relative;
+    bottom: 150px;
+    left: 50px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
     
 
 }
