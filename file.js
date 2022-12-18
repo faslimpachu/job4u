@@ -1,29 +1,17 @@
-// $(document).ready(function(){
-//   $("#nav-check1").click(function(){
-//     $("#all-hide").hide();
-//  });
-//  $("#nav-check1").change(function(){
-//   $("#all-hide").show();
-// });
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
 
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
 
-// });
-// // $("#nav-check1").toggle(
-// //   function(){
-// //     $("#all-hide").children().show();
-// //   },
-// //   function(){
-// //     $("#all-hide").children().hide();
-// //   }
-
-// // );
-
-
-function myfun(){
-  var x = document.getElementById("#nav-check1");
-  if (x.style.display === "none"){
-    x.style.display = "block";
-  } else{
-    x.style.display ="none";
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
   }
 }
+
+window.addEventListener("scroll", reveal);
