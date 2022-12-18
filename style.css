@@ -58,7 +58,11 @@ body {
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
 }
+.btn-8{
+  margin-top: 20px;
+  margin-left: 500px;
 
+}
 
 @media (max-width:600px) {
   .nav > .nav-btn {
@@ -138,6 +142,11 @@ body {
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
+  }
+  .btn-8{
+    margin-top: 20px;
+    margin-left: 100px;
+
   }
     
 
